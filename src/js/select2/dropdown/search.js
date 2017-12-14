@@ -2,7 +2,9 @@ define([
   'jquery',
   '../utils'
 ], function ($, Utils) {
-  function Search () { }
+  function Search (decorated, $element, options) {
+    decorated.call(this, $element, options);
+  }
 
   Search.prototype.render = function (decorated) {
     var $rendered = decorated.call(this);

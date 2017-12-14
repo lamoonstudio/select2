@@ -71,3 +71,30 @@
     display: none;
   }
 }
+
+.select2-filter {
+  height: 30px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-around;
+
+  input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  label {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    span {
+      align-self: center;
+    }
+  }
+
+  label.filter-selected {
+    color: #ffffff;
+    background-color: #93a1a1;
+  }
+}

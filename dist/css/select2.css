@@ -98,6 +98,24 @@
   .select2-search--dropdown.select2-search--hide {
     display: none; }
 
+.select2-filter {
+  height: 30px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-around; }
+  .select2-filter input[type="radio"] {
+    visibility: hidden;
+    position: absolute; }
+  .select2-filter label {
+    display: flex;
+    flex: 1;
+    justify-content: center; }
+    .select2-filter label span {
+      align-self: center; }
+  .select2-filter label.filter-selected {
+    color: #ffffff;
+    background-color: #93a1a1; }
+
 .select2-close-mask {
   border: 0;
   margin: 0;
